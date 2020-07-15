@@ -1,0 +1,114 @@
+2Q.Explain about javascript String methods and Array methods.
+
+Ans
+STRING METHODS.
+i.String length(). -> returns length of string
+ex:
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+output:	26
+
+ii.indexOf() -> returns the position of the first occurance of a specified text in a string.
+ex:
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+Output:	7
+
+iii.search() -> It searches a string for a specified value and returns the position.
+ex:
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+output:	7
+
+iv.slice() -> extracts a part of string and returns the extrancted part.
+ex:	var str = "Apple,Banana,kiwi";
+	var res = str.slice(7,13);
+	Output:
+		Banana
+
+v. substring() -> it is similar to slice( ) but cannot accept negative indices.
+
+vi. substr( ) -> It is similar to slics( ) method but the second parameter specifies length of the extracted string.
+ex:
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(15,4);
+output:
+Kiwi
+
+vii.replace( ) -> Replaces a specified value with another value in a string.
+ex:
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","Google");
+output:	Please visit Google!
+
+vii.toUpperCase( ) and toLowerCase( )
+A string can be converted to upper or lower cases.
+ex:
+var text1 = "Hello World!";       
+var text2 = text1.toUpperCase();
+var text3 = text1.toLowerCase();
+Output:
+HELLO WORLD
+hello world
+
+viii.concat() -> joins two or more strings
+ex:
+var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
+output:
+Hello World
+
+ix.trim() -> this method removes white spaces from both sides of a string.
+var str = "       Hello World!        ";
+alert(str.trim());
+output:
+Hello World!
+
+ARRAY METHODS
+
+i.toString() -> Converts an array to a string
+ex:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Result:
+Banana,Orange,Apple,Mango
+
+ii.pop() -> removes the last element from an array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop()
+Output mango will be popped.
+
+iii.push() -> Adds an element into an array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("kiwi");
+
+iv.shift() -> This method removes the first array element and shifts all other elements to alower index.
+ex:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();  
+
+v.splice() -> it can be used to add new items to an array.
+ex:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi"); 
+output:
+Banana,Orange,Lemon,Kiwi,Apple,Mango
+
+vi.concat() -> This method creates a new array by merging existing arrays.
+ex:
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias", "Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);
+output:
+Cecilie,Lone,Emil,Tobias,Linus,Robin,Morgan
+
+vii.slice() -> this method slices out a piece of an array into a new array
+ex:
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+output:
+Orange,Lemon,Apple,Mango
+
+viii.sort() -> sorts an array alphabetically.
