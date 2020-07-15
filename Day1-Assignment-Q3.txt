@@ -1,0 +1,21 @@
+3Q.Write a brief intro about datatypes in javascript.
+
+Ans
+There are 4 basic data types in JavaScript.
+
+1.Number
+It represents both integer and floating point numbers.
+
+2.BigInt
+In js number type cannot represent integer values greater than 2^53 - 1. So we use BigInt.
+
+3.String
+ex:
+let str = "Hello";
+let str2 = 'hi';
+let str3 = `phrase`;
+backtics(`) are extended functionality quotes. They allow us to embed variables and expressions into string.
+
+4.Boolean
+It has two values: True and False.
+True represents "yes" and False represents "No".
