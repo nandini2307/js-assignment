@@ -1,0 +1,24 @@
+1.Explore the various methods in console function and explain them.
+
+Ans. 
+In js console is an object that provides access to the browser debugging console.
+The console object provides us with several methods such as
+i.console.log()  -> It is used to print the output to the console.
+example : console.log('abc');
+
+ii.console.error() -> It is used to print error message to the console. Useful in testing of code.
+example: console.error("It is an error")
+
+iii.console.warn() -> It is used to print a warning message.
+example: console.warn("warning")
+
+iv.console.clear() -> It is used to clear the console when no message is returned.
+
+v.console.time() -> It is used to know the amount of time spend by a function.
+
+vi.console.table() -> This method allows us to generate a table inside a console.
+example: console.table({'a':1,'b':2});
+
+vii.console.count() -> This method is used to count the number that the function hit.
+
+	
