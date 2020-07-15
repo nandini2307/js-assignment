@@ -1,0 +1,23 @@
+2.write the difference between var, let and const with example.
+
+Ans
+
+var: The scope of a variable defined here is limited to the function within which it is defined.
+var is function scoped.
+ex:
+      var greet = "hello";
+      document.write(greet);
+      output:
+	hello
+
+let: The scope of a variable defined with let is limited to the block.
+It is block-scoped.
+        document.write(x);
+        let x = 10;
+        output:
+	error. undefined.
+        
+
+const:The scope of a variable defined here is limited to the block. It cannot be re-assigned to a new value. However it can be mutated.
+	ex:
+	const PI = 3.14159265359;
