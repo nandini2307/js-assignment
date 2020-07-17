@@ -7,6 +7,8 @@
         <script type = "text/javascript">
         var x;
         x = prompt("Enter Marks:");
+        //Using conditional statements
+        /*
         if( x > 85 && x <= 100 )
         {
             document.write("Marks are "+x+" and grade is A");
@@ -31,6 +33,34 @@
         {
             document.write("Marks are "+x+" and grade is F");
         }
+        */
+        //Using Switch statement
+        
+        switch(true)
+            {
+                case x > 85 && x <= 100:
+                    document.write("Marks are "+x+" and grade is A");
+                    break;
+                case x > 65 && x <= 85:
+                    document.write("Marks are "+x+" and grade is B");
+                    break;
+                case x > 55 && x <= 65:
+                    document.write("Marks are "+x+" and grade is C");
+                    break;
+                case x > 45 && x <= 55:
+                    document.write("Marks are "+x+" and grade is D");
+                    break;
+                case x > 35 && x <= 45:
+                    document.write("Marks are "+x+" and grade is E");
+                    break;
+                case x > 0 && x <= 35:
+                    document.write("Marks are "+x+" and grade is F");
+                    break;
+                default:
+                    document.write("Invalid Number");
+                    break;
+            }
+
         </script>
     </body>
 </html>
