@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-7</title>
+        <h2 style="color:darkgoldenrod">Prime Numbers upto a given number</h2>
+        <style>
+            body{
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+            var n = prompt("Enter a number");
+            document.write("Number Entered:"+n+"<br>");
+            nextPrime:
+            for(var i = 2;i<n;i++)
+            {
+                for(var j = 2;j<i;j++)
+                {
+                    if(i % j === 0) 
+                        continue nextPrime;
+                    
+                }
+                document.write(i+"<br>");
+            }
+        </script>
+    </body>
+</html>
