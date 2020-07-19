@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-3</title>
+    </head>
+    <body>
+        <p id = "demo"></p>
+        <button onclick="myFunc()">Click to add elements</button>
+        <p id = "demo1"></p>
+        <script type = "text/javascript">
+            var shoppingList = ["Bread","Butter","Pasta","Cheese","Jam","Nuttela"];
+            document.getElementById("demo").innerHTML = shoppingList;
+            function myFunc()
+            {
+                var shoppingBasket = shoppingList.concat(shoppingBasket);
+                var n = prompt("no.of items to be added into the list ");
+                var i;
+                for(i = 0;i<n;i++)
+                {
+                    var x = prompt("Enter an Item");
+                    shoppingBasket.push(x);
+                }
+                document.getElementById("demo1").innerHTML = shoppingBasket;
+                shoppingList = shoppingBasket;
+            }
+        </script>
+    </body>
+</html>
