@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-2</title>
+        <style>
+            body {
+                background-color: burlywood;
+                font-style: oblique;
+                font-size: larger;
+                font-weight: bolder;
+                color: crimson;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+    class User {
+    constructor(name, age,email) {
+      this.name = name;
+      this.age = age;
+      this.email = email;
+      this.luCoins = 0;
+      this.courses = [];
+    }
+
+    static greet(){
+        console.log("Hello There");
+    }
+
+    login(){
+        console.log(`${this.name} has logged in`);
+        return this;
+    }
+    logout(){
+        console.log(`${this.name} has logged out`);
+        return this;
+    }
+    addCoins(){
+        this.luCoins++;
+        document.write(`${this.name} has ${this.luCoins} coins`);
+        return this;
+    }
+    removeCoins()
+    {
+        this.luCoins--;
+        document.write(this.name + "has" + name.luCoins + "coins");
+        return this;
+    }
+    getDetails(){
+        document.write(`Name is ${this.name}, email is ${this.email}`);
+        return this;
+    }
+}
+class Moderator extends User{
+    constructor(name,age,email,role){
+        super(name,age,email);
+        this.role = role;
+    }
+
+    deleteUser(user){
+        users = users.filter(u =>{
+            return u.email != user.email; 
+        })
+    }
+}
+class Admin extends Moderator
+{
+    addCourse(user,course)
+    {
+        user.courses.push(course);
+        document.write("user has added"+ course);
+        return this;
+    }
+    delCourse(user,course)
+    {
+        user.courses = user.courses.filter(courses => courses !== course);
+        console.log("User has successfully deleted"+course);
+        return this;
+    }
+}
+</script>
+</body>
+</html>
