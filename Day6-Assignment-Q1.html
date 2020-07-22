@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Question 1
+        </title>
+        <h1>Background color changes after every 5 seconds.</h1>
+        <style>
+            h1 {
+                font-style: inherit;
+                font-size: larger;
+                text-align: center;
+            }
+            body {
+                border-style: ridge;
+                border-color: lightslategrey;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+            var i = 0;
+            function change()
+            {
+                var doc = document.getElementById("background");
+                var color = ["crimson","magenta","plum","darkolivegreen","teal","lightseagreen"];
+                doc.style.backgroundColor = color[i];
+                i = (i+1) % color.length;
+            }
+            setInterval(change,5000);
+        </script>
+        <div id = "background" style="height: 600px;">&nbsp;</div>
+    </body>
+</html>
